@@ -3,6 +3,11 @@ import {View, StyleSheet, useWindowDimensions} from 'react-native';
 import PokeImage from './PokeImage';
 import PokeData from './PokeData';
 
+const LINEAR_IMAGE_HEIGHT = 80;
+export const PADDING = 16,
+  MARGIN = 16;
+export const LINEAR_CARD_HEIGHT = LINEAR_IMAGE_HEIGHT + 2 * PADDING;
+
 export default function PokeCard(props) {
   const {height, width} = useWindowDimensions();
 
@@ -47,8 +52,8 @@ const styles = StyleSheet.create({
     minHeight: 152,
   },
   linearImage: {
-    height: 80,
-    width: 80,
+    height: LINEAR_IMAGE_HEIGHT,
+    width: LINEAR_IMAGE_HEIGHT,
   },
   gridImage: {
     width: '100%',

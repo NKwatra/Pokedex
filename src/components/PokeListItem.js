@@ -1,6 +1,8 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import PokeCard from './PokeCard';
+import PokeCard, {LINEAR_CARD_HEIGHT, MARGIN} from './PokeCard';
+
+export const LINEAR_ITEM_HEIGHT = 2 * LINEAR_CARD_HEIGHT + 4 * MARGIN;
 
 export default function PokeListItem(props) {
   return (
