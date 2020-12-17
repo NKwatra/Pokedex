@@ -1,0 +1,817 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokeListItem renders correctly in grid view 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "minHeight": 152,
+          "paddingBottom": 4,
+          "paddingTop": 0,
+        },
+        Object {
+          "height": 423.3333333333333,
+          "width": 343,
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": "80%",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        A
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "minHeight": 152,
+          "paddingBottom": 4,
+          "paddingTop": 0,
+        },
+        Object {
+          "height": 423.3333333333333,
+          "width": 343,
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": "80%",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        B
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "minHeight": 152,
+          "paddingBottom": 4,
+          "paddingTop": 0,
+        },
+        Object {
+          "height": 423.3333333333333,
+          "width": 343,
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": "80%",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        C
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "minHeight": 152,
+          "paddingBottom": 4,
+          "paddingTop": 0,
+        },
+        Object {
+          "height": 423.3333333333333,
+          "width": 343,
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": "80%",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        D
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "minHeight": 152,
+          "paddingBottom": 4,
+          "paddingTop": 0,
+        },
+        Object {
+          "height": 423.3333333333333,
+          "width": 343,
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": "80%",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        E
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "minHeight": 152,
+          "paddingBottom": 4,
+          "paddingTop": 0,
+        },
+        Object {
+          "height": 423.3333333333333,
+          "width": 343,
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": "80%",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        F
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`PokeListItem renders correctly in list view 1`] = `
+<View
+  style={Object {}}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": 80,
+          "width": 80,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        A
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "blue",
+          }
+        }
+      >
+        abc
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": 80,
+          "width": 80,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        B
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "blue",
+          }
+        }
+      >
+        bcd
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": 80,
+          "width": 80,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        C
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "blue",
+          }
+        }
+      >
+        cde
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": 80,
+          "width": 80,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        D
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "blue",
+          }
+        }
+      >
+        def
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": 80,
+          "width": 80,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        E
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "blue",
+          }
+        }
+      >
+        efg
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderRadius": 20,
+          "elevation": 2,
+          "marginHorizontal": 16,
+          "marginVertical": 16,
+          "overflow": "hidden",
+          "padding": 16,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 5,
+          },
+          "shadowOpacity": 0.15,
+          "shadowRadius": 4,
+        },
+        Object {
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/images/charmander.png",
+        }
+      }
+      style={
+        Object {
+          "height": 80,
+          "width": 80,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "marginBottom": 8,
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        F
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "blue",
+          }
+        }
+      >
+        fgh
+      </Text>
+    </View>
+  </View>
+</View>
+`;
