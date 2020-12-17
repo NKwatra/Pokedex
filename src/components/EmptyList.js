@@ -1,6 +1,12 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
+/*
+  Component to display retry message in case of empty pokemon list
+  props : {
+    retry: () => void // function to show loading indicator and reload data
+  }
+*/
 export default function EmptyList(props) {
   return (
     <View style={styles.container}>

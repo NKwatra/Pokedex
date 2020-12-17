@@ -3,11 +3,22 @@ import {View, StyleSheet, useWindowDimensions} from 'react-native';
 import PokeImage from './PokeImage';
 import PokeData from './PokeData';
 
+/*
+  Constants for card styling and card size
+*/
 const LINEAR_IMAGE_HEIGHT = 80;
 export const PADDING = 16,
   MARGIN = 16;
 export const LINEAR_CARD_HEIGHT = LINEAR_IMAGE_HEIGHT + 2 * PADDING;
 
+/*
+  Component for a card in pokemon list
+  props: {
+    grid: boolean, compact -> true, comfortable -> false
+    name: string,
+    url: string
+  }
+*/
 export default function PokeCard(props) {
   const {height, width} = useWindowDimensions();
 

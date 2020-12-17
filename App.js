@@ -7,9 +7,6 @@ import {
   Switch,
   ActivityIndicator,
   useWindowDimensions,
-  NativeModules,
-  LayoutAnimation,
-  Platform,
 } from 'react-native';
 import Loading from './src/components/Loading';
 import PokeListItem, {LINEAR_ITEM_HEIGHT} from './src/components/PokeListItem';
@@ -17,15 +14,6 @@ import {getPokemonData} from './src/utils/network';
 import {convertToPairs} from './src/utils/library';
 import EmptyList from './src/components/EmptyList';
 import {MARGIN} from './src/components/PokeCard';
-
-const {UIManager} = NativeModules;
-
-if (
-  Platform.OS === 'android' &&
-  UIManager.setLayoutAnimationEnabledExperimental
-) {
-  UIManager.setLayoutAnimationEnabledExperimental(true);
-}
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -38,6 +26,10 @@ export default function App() {
   const listRef = useRef(null);
   const currentScrollPosition = useRef(0);
 
+  /*
+    load pokemon data whenever end of list is reached or user retries
+    because of error
+  */
   useEffect(() => {
     getPokemonData(offset)
       .then((data) => {
@@ -71,20 +63,32 @@ export default function App() {
 
   const renderItem = ({item}) => <PokeListItem items={item} grid={isCompact} />;
 
+  /*
+    record current offset of list
+  */
   const handleScroll = (evt) => {
     currentScrollPosition.current = evt.nativeEvent.contentOffset.y;
   };
 
+  /*
+    function to calculate offset where list should scroll to
+    when user switches view, so as to stay at the
+    same position (i.e. same pokemon)
+  */
   const getNewScrollPosition = () => {
+    /*
+      calculate index for current list item, based on fixed size
+      of list items in respective views
+    */
     let index;
     if (isCompact) {
-      index = Math.ceil(
+      index = Math.floor(
         (currentScrollPosition.current * 3) / (window.height - 4 * MARGIN),
       );
+
       return index * LINEAR_ITEM_HEIGHT;
     } else {
-      index = Math.ceil(currentScrollPosition.current / LINEAR_ITEM_HEIGHT);
-      console.log(index);
+      index = Math.floor(currentScrollPosition.current / LINEAR_ITEM_HEIGHT);
       return (index * (window.height - 64)) / 3;
     }
   };
@@ -103,7 +107,6 @@ export default function App() {
               offset: newPosition,
               animated: false,
             });
-            console.log(newPosition, 'I am done');
             setIsCompact((prevCompactValue) => !prevCompactValue);
           }}
           style={styles.switch}
