@@ -8,14 +8,15 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import Loading from './src/components/Loading';
-import PokeCard from './src/components/PokeCard';
+import PokeListItem from './src/components/PokeListItem';
 import {getPokemonData} from './src/utils/network';
+import {convertToPairs} from './src/utils/library';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [offset, setOffset] = useState(0);
   const [pokemonList, setPokemonList] = useState([]);
-  const [numColumns, setNumColums] = useState(1);
+  const [isCompact, setIsCompact] = useState(false);
   const [loadingMorePokemon, setLoadingMorePokemon] = useState(false);
 
   useEffect(() => {
@@ -27,6 +28,7 @@ export default function App() {
         Please check your internet connection if the  problem persists.`,
         );
       } else {
+        data = convertToPairs(data, 2);
         setPokemonList((currentPokemonList) => [
           ...currentPokemonList,
           ...data,
@@ -37,7 +39,7 @@ export default function App() {
     });
   }, [offset]);
 
-  const renderItem = ({item}) => <PokeCard {...item} grid={numColumns === 2} />;
+  const renderItem = ({item}) => <PokeListItem items={item} grid={isCompact} />;
 
   return loading ? (
     <Loading />
@@ -46,9 +48,9 @@ export default function App() {
       <View style={styles.switchContainer}>
         <Text>Comfortable</Text>
         <Switch
-          value={numColumns === 2}
+          value={isCompact}
           onValueChange={() => {
-            setNumColums((columns) => (columns === 1 ? 2 : 1));
+            setIsCompact((prevCompactValue) => !prevCompactValue);
           }}
           style={styles.switch}
         />
@@ -56,10 +58,8 @@ export default function App() {
       </View>
       <FlatList
         data={pokemonList}
-        keyExtractor={(item) => item.name}
+        keyExtractor={(item) => item[0].name}
         renderItem={renderItem}
-        numColumns={numColumns}
-        key={numColumns}
         onEndReachedThreshold={0.1}
         onEndReached={() => {
           setLoadingMorePokemon(true);

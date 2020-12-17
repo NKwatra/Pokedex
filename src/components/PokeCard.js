@@ -1,13 +1,21 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, useWindowDimensions} from 'react-native';
 import PokeImage from './PokeImage';
 import PokeData from './PokeData';
 
 export default function PokeCard(props) {
+  const {height, width} = useWindowDimensions();
+
   return (
     <View
       style={
-        props.grid ? [styles.card, styles.grid] : [styles.card, styles.linear]
+        props.grid
+          ? [
+              styles.card,
+              styles.grid,
+              {width: (width - 64) / 2, height: (height - 64) / 3},
+            ]
+          : [styles.card, styles.linear]
       }>
       <PokeImage style={props.grid ? styles.gridImage : styles.linearImage} />
       <PokeData {...props} showUrl={!props.grid} />
@@ -36,8 +44,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingBottom: 4,
     paddingTop: 0,
-    width: 152,
-    height: 152,
+    minHeight: 152,
   },
   linearImage: {
     height: 80,
