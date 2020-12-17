@@ -8,7 +8,7 @@ import {getPokemonData} from './network';
   (data: Array<{name: string, url: string}>, groupSize: number)
   => Array<Array<{name: string, url: string}>>
 */
-const convertToPairs = (data, groupSize) => {
+export const convertToPairs = (data, groupSize) => {
   let pairs = [];
   for (let i = 0; i < data.length; ) {
     pairs.push(data.slice(i, i + groupSize));
